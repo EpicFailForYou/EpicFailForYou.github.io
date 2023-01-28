@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
          <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
-         <script src="script.js"></script>
+        <!-- <script src="script.js"></script> -->
     </head>
     <body>
         <label for="roomCode">Enter Room Code:</label>
@@ -11,8 +11,8 @@
 
 
         <script>
-            const socket = io('http://44.203.44.104:3000/');
-            //var socket = require('socket.io')('http://44.203.44.104:3000/');
+            const socket = io('https://44.203.44.104:3000/');
+            //var socket = require('socket.io')('https://44.203.44.104:3000/');
           //  const socket = io();
 socket.on('connect', () => {
     console.log(`You connected with id: ${socket.id}`);
