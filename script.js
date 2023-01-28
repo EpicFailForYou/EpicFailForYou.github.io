@@ -1,9 +1,4 @@
-const socket = io('http://44.203.44.104:3000/', {
-    cors: {
-      origin: ["https://admin.socket.io"],
-      credentials: true
-    }
-  });
+const socket = io('http://44.203.44.104:3000/');
 //const socket = require('socket.io-client')('http://localhost:3000');
 socket.on('connect', () => {
     console.log(`You connected with id: ${socket.id}`);
