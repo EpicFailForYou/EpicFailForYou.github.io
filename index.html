@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <head>
+        <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <label for="roomCode">Enter Room Code:</label>
+        <input id = "roomCode" type="text" name="rcode" maxlength="4"><br><br>
+        <input type="submit" value="Submit" onclick="joinRoom()">
+        <input type="submit" value="Send" onclick="sendMessage()">
+
+
+        <script>
+   /*         var socket = require('socket.io')('http://44.203.44.104:3000/');
+          //  const socket = io();
+socket.on('connect', () => {
+    console.log(`You connected with id: ${socket.id}`);
+    socket.on("disconnect", (reason) => {
+        console.log("DISCONNECTED");
+      });
+      socket.on("hostDisconnect", (reason) => {
+        console.log(reason);
+        //TODO: HOST DESTROYED ROOM. SEND PLAYER BACK TO MAIN MENU.
+      });
+})
+
+
+//User typed in a room code and attemped to join it
+function joinRoom() {
+    const elem = document.getElementById('roomCode').value;
+    console.log(elem);
+    socket.emit("requestToJoin", elem, callback => {
+        console.log(callback);
+        if (callback) {
+            console.log("Successfully joined");
+        }
+        else {
+            console.log("Failed to join");
+        }
+    })
+}
+
+//Let player know that they cannot join that room
+function roomJoinFailed() {
+
+}
+
+//User submitted an answer to be sent to the server
+function submitSimpleAnswer() {
+
+}*/
+        </script>
+
+
+
+
+    </body>
+</html>
